@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="checkout1.css">
+  <style>
+    /* Add more styling for the cart and other elements as needed */
+
+    body {
+      padding-top: 100px;
+      
+    }
+    header {
+      position: fixed;
+      top: 0;
+    }
+.section-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.review-order {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+.order-picture {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid lightgray;
+  margin-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 0;
+}
+.order-picture > div {
+  font-weight: bold;
+  display: block;
+ 
+
+}
+ .iphone-price > p > .price{
+  color: black;
+  font-size: 20px;
+  margin-right: 100%;
+}
+.item-quantity {
+  display: inline-block;
+}
+button {
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #017cb6;
+  cursor: pointer;
+}
+.pr {
+  color: gray;
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+.dele {
+  color: #017cb6;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="main-page" href="my-e-commerce.html">
+      <div class="logo">MY<span>APP</span></div>
+    </a>
+    
+    <div class="search-area">
+     
+      <input type="text" class="search-box" placeholder="Search...">
+      <span class="search-icon">
+        <img class="search-box-icon" src="search-icon.png">
+      </span>
+    </div>
+    <div class="help-area">
+      <a href="#" class="help-link">Returns <br> & Orders</a>
+      
+     
+      <div class="my-account">
+        My Account
+        <div class="dropdown">
+          <ul>
+            <li><a href="#">Sign In</a></li>
+            <li> <a href="#" class="sign-up">Sign Up</a></li>
+            <li><a href="#">My Orders</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a class="checkout-link" href="checkout.html">
+      <div class="cart">
+        <div class="cart-icon">
+          <img src="cart-icon.png">
+          <div class="add-to-cart js-cart-quantity">0</div>
+        </div>
+        <div class="cart-text">cart</div>
+      </div>
+    </a>
+  </header>
+    <div>
+    <div class="section-list">
+      <section>MyApp</section>
+      <section>checkout(1)</section>
+      <section>key</section>
+  
+    </div>
+  <div>
+     <p class="review-order">Review your Order</p>
+  </div>
+
+  <div class="order-picture">
+    <img src="iphone15.jpg">
+    
+      <div class="iPhone-price">Apple IPhone 13 Pro Max 6.7  <p class="pric"> Price: £1,352.00</p>
+        <p class="item-quantity">Quantity: 1</p>
+        <button>Update</button>
+        <button>Delete</button>
+
+        <form>
+          <label>
+            <input type="radio" name="delivery" value="standard" checked>
+           <span class="dele">Standard Delivery (Free)</span> <br>
+            <span class="pr">Estimated Delivery: 3-5 business days</span>
+          </label>
+        <br>
+          <label>
+            <input type="radio" name="delivery" value="express">
+            <span class="dele">Delivery (Paid)</span> <br>
+            <span class="pr">stimated Delivery: 2-3 business days
+              Cost: £9.99</span>
+          </label>
+        <br>
+          <label>
+            <input type="radio" name="delivery" value="next-day">
+            <span class="dele">Next Day Delivery (Paid)</span> <br>
+            <span class="pr">Estimated Delivery: Next business day
+              Cost: £19.99</span>
+          </label>
+        
+        </form>
+        
+      </div>
+ 
+    </div>
+
+
+  
+<script type="module" src="myapp.js"></script>
+</body>
+</html>
